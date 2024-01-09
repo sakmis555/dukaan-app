@@ -40,24 +40,29 @@
   top: 10%;
   left: 15%;
   width: 85%;
-  height: 30%;
+  height: 20%;
   background-color: #fafafa;
 }
 
 .transactions {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 15%;
   width: 79%;
-  height: 60%;
+  height: 70%;
   background-color: #fafafa;
   margin-left: 3%;
   margin-right: 3%;
 }
-
+input[type="text"],
+button {
+  border: none;
+  outline: none;
+}
 .table {
   /* background-color: black; */
   width: 100%;
+  border-collapse: collapse;
 }
 .row {
   display: flex;
@@ -67,11 +72,61 @@
   padding: 10px;
   padding-left: 20px;
   border-radius: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 .heading {
   background-color: #f2f2f2;
 }
+
+/* Style individual cells */
+.table td {
+  padding: 10px;
+}
+
+/* Center text in the cells */
+.table td,
+.table th {
+  text-align: center;
+}
+
+/* Add some spacing between table cells */
+.table th,
+.table td {
+  padding: 12px;
+}
+
+td {
+  font-weight: 500;
+}
+
+.order-id {
+  color: #307fbc;
+  cursor: pointer;
+}
+/* Responsive design - adjust styles for smaller screens if needed */
+@media (max-width: 768px) {
+  .transactions {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.arrow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: medium;
+  /* padding: 5px; */
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #4c4c4c;
+  border: 2px solid #d9d9d9;
+  /* border-color: #146eb4; */
+  border-radius: 6px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -111,7 +166,10 @@
 
 .pagination-container {
   display: flex;
+  justify-content: center;
   list-style-type: none;
+  /* margin-left: 30px; */
+  /* background-color: #1e2640; */
 
   .pagination-item {
     padding: 0 12px;
@@ -133,12 +191,13 @@
       cursor: default;
     }
     &:hover {
-      background-color: rgba(0, 0, 0, 0.04);
+      /* background-color: rgba(0, 0, 0, 0.04); */
       cursor: pointer;
     }
 
     &.selected {
-      background-color: rgba(0, 0, 0, 0.08);
+      background-color: #146eb4;
+      border-radius: 8px;
     }
 
     .arrow {
