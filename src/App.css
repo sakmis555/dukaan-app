@@ -1,9 +1,72 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: #fff9db;
+  background-color: #fafafa;
 }
 
+.navbar {
+  background-color: #1e2640;
+  min-height: 100vh;
+  width: 15%;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.navbar-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 85%;
+  height: 10%;
+  background-color: white;
+}
+
+.overview {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 85%;
+  height: 30%;
+  background-color: #fafafa;
+}
+
+.transactions {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  width: 82%;
+  height: 60%;
+  background-color: #fafafa;
+  margin-left: 3%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+.heading {
+  background-color: #f2f2f2;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -17,7 +80,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

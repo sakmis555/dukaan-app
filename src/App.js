@@ -1,5 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Overview from "./components/Overview";
+import Transactions from "./components/Transactions";
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
         </a>
       </header>
         */}
+      <Navbar />
+      <Header />
+      <Overview />
+      <Transactions />
     </div>
   );
 }
