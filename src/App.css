@@ -30,18 +30,27 @@
   position: absolute;
   top: 0;
   left: 15%;
-  width: 85%;
-  height: 10%;
+  width: 79%;
+  height: 7%;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-left: 3%; */
+  /* margin-right: 3%; */
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .overview {
   position: absolute;
   top: 10%;
   left: 15%;
-  width: 85%;
+  width: 79%;
   height: 20%;
   background-color: #fafafa;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .transactions {
@@ -93,7 +102,7 @@ button {
 /* Add some spacing between table cells */
 .table th,
 .table td {
-  padding: 12px;
+  /* padding: 12px; */
 }
 
 td {
